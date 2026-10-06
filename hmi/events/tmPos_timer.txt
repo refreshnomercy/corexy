@@ -1,0 +1,92 @@
+if(paint.val==1)
+{
+  if(brok.val==1)
+  {
+    ex.val=brx.val-4
+    ey.val=bry.val-4
+    ix.val=ex.val-p0.x
+    iy.val=ey.val-p0.y
+    xpic ex.val,ey.val,9,9,ix.val,iy.val,p0.pic
+  }
+  brx.val=rpx.val
+  bry.val=rpy.val
+  brok.val=rok.val
+}
+if(gnew.val==1)
+{
+  gnew.val=0
+  gage.val=0
+  if(gpx.val<26)
+  {
+    gpx.val=26
+  }
+  if(gpx.val>483)
+  {
+    gpx.val=483
+  }
+  if(gpy.val<26)
+  {
+    gpy.val=26
+  }
+  if(gpy.val>433)
+  {
+    gpy.val=433
+  }
+  ex.val=0
+  if(gok.val!=dok.val)
+  {
+    ex.val=1
+  }
+  if(gok.val==1)
+  {
+    if(gpx.val!=dpx.val||gpy.val!=dpy.val)
+    {
+      ex.val=1
+    }
+  }
+  if(ex.val==1)
+  {
+    if(dok.val==1)
+    {
+      ex.val=dpx.val-6
+      ey.val=dpy.val-6
+      ix.val=ex.val-p0.x
+      iy.val=ey.val-p0.y
+      xpic ex.val,ey.val,13,13,ix.val,iy.val,p0.pic
+    }
+    dpx.val=gpx.val
+    dpy.val=gpy.val
+    dok.val=gok.val
+    paint.val=1
+  }
+}
+else
+{
+  if(gage.val<1000)
+  {
+    gage.val=gage.val+100
+  }
+  if(gage.val>=1000&&dok.val!=0)
+  {
+    ex.val=dpx.val-6
+    ey.val=dpy.val-6
+    ix.val=ex.val-p0.x
+    iy.val=ey.val-p0.y
+    xpic ex.val,ey.val,13,13,ix.val,iy.val,p0.pic
+    dok.val=0
+    paint.val=1
+  }
+}
+if(paint.val==1)
+{
+  paint.val=0
+  if(rok.val==1)
+  {
+    cirs rpx.val,rpy.val,4,RED
+  }
+  if(dok.val==1)
+  {
+    cir dpx.val,dpy.val,6,GREEN
+  }
+}
+printh 55 50 01 FF FF FF

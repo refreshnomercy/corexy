@@ -1,0 +1,27 @@
+if(tch0!=0&&tch1!=0)
+{
+  rpx.val=tch0
+  rpy.val=tch1
+  printh 55 54
+  prints rpx.val,2
+  prints rpy.val,2
+  printh FF FF FF
+  if(rpx.val<26)
+  {
+    rpx.val=26
+  }
+  if(rpx.val>483)
+  {
+    rpx.val=483
+  }
+  if(rpy.val<26)
+  {
+    rpy.val=26
+  }
+  if(rpy.val>433)
+  {
+    rpy.val=433
+  }
+  rok.val=1
+  paint.val=1
+}

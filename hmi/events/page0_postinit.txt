@@ -1,0 +1,21 @@
+gpx.val=0
+gpy.val=0
+gok.val=0
+gnew.val=0
+dpx.val=0
+dpy.val=0
+dok.val=0
+rpx.val=0
+rpy.val=0
+rok.val=0
+gage.val=1000
+paint.val=1
+brx.val=0
+bry.val=0
+brok.val=0
+ex.val=0
+ey.val=0
+ix.val=0
+iy.val=0
+tmPos.en=1
+printh 55 50 01 FF FF FF

@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Preserve exact bytes of the screen project and published firmware hashes.
+*.HMI binary
+*.hex binary
